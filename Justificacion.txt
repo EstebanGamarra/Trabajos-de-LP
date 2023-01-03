@@ -1,0 +1,28 @@
+Para el mejor desempeño siempre elegir en el siguiente orden:
+>Máximo numero de movimientos por participante
+>Piezas jugador : Doradas (empieza abajo)
+>Posicionar piezas: Predeterminado
+>Turnos máximos
+>CPUVJUG
+>Empieza: Jugador
+>OK
+(Además, una vez que el límite del turno del jugador se alcance, uno debe clickear un espacio,
+vacio para poder hacer que la cpu pase a su turno. También los marcadores de ambos jugadores, se
+van actualizando después de cada click)
+Justificación:
+La razón por la que la longitud del código es de 6186 líneas es debido a que dependiendo de qué 
+jugadores se trate cpu1, cpu2, jugador y sus colores, el código debe discernir cómo interactuar
+con las variables, además de que todos los cambios en el tablero mediante gtk, especialmente
+los cambios de imágenes deben ser hechos de manera individual ya que cada imagen es un ítem
+distinto e independiente del resto, no es lo mismo que usar variables aleatorias.
+Además la implementación de la cpu es de aproximadamente 1300 líneas volviendose 2600 para
+que esta pudiese ser traducida directamente a modo cpu vs cpu.
+Para las demostraciones además, se empezará siempre con esta configuración ya que es la más
+rápida, además para demostrar ciertas puntos la matriz que determina la configufación predeterminada
+de piezas será modificada en el código.
+El menú principal controla todas las demás ventanas por lo que si este se cierra, se termina el programa.
+Las demás ventanas pueden ser abiertas cuando uno lo desee, como se demostrará en los videos.
+Las imágenes adjuntas son:
+>Explicación de la inteligencia artificial gráficamente
+>Explicación de la estructura del empuje-estire
+

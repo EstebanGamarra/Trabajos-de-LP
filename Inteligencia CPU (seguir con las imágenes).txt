@@ -1,0 +1,11 @@
+Documentación de la CPU
+Nuestra inteligencia funciona de la siguiente manera:
+>Primeramente verificamos si existen las piezas más fuertes (caballos, camello, elefante)
+	>Estos ahora verifican si es que no hay una pieza enemiga o alguna trampa hasta 2 casillas de separación de ellos
+	>(Si se cumplió lo anterior se coloca en posición cruz) (Caso ABCD imágen)
+	>Una vez en posición cruz se coloca en posicion X (Caso 1-2-3-4 imágen)
+	>De estar en posición X, empujará a cualquier enemigo
+>Los perros y gatos se encargan de escudar a los conejos, siempre verificando, si hay alguno cerca
+>Los conejos solo se mueven hacia adelante a no ser que se encuentren frente a una trampa, de ser así, la esquivarán moviendose a los costados
+El orden de precedencia de las acciones es tal cual está en este documento.
+Por lo que nuestra cpu -> se coloca en lugares estrategicos -> espera al oponente -> escuda la piezas más débiles -> avanza con sus conejos
